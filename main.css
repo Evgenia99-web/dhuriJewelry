@@ -1,0 +1,54 @@
+@keyframes leaf-odd-grow {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+*{margin: 0;padding: 0;}
+body{    font-family: 'Montserrat', sans-serif; }
+header{
+    height: 15vh; 
+    padding: 10px 100px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #f3e6df;
+}
+.logo>img{height: 10vh;}
+nav>a{text-decoration: none; color: #b58171; margin-right: 20px;}
+.two, .three, .fore, .five{height: 100vh; display: flex; width: 100%;}
+.l1, .l2, .l3, .l4, .r1, .r2, .r3, .r4{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.l1{background-image: url(img/left1.jpg);}
+.l2{background-image: url(img/left2.jpg); padding: 80px 190px 40px 70px;}
+.r1{background-image: url(img/right1.jpg); padding: 130px 70px 40px 190px;}
+.r2{background-image: url(img/right2.jpg);}
+.l3{background-image: url(img/left3.jpg);}
+.l4{background-image: url(img/left4.jpg); padding: 70px 190px 40px 70px;}
+.r3{background-image: url(img/right3.jpg); padding: 80px 70px 40px 190px;}
+.r4{background-image: url(img/right4.jpg);}
+.r1>h1, .r1>h4, .r1>p, .l2>h2, hr, .r3>h2, .l4>h2{margin-bottom: 15px; transform-origin: 0% 100%;
+    animation-name: leaf-odd-grow;
+    animation-duration: 4s;
+    animation-fill-mode: both;}
+.r1>h1{letter-spacing: 10px;font-weight: bold; font-size: 72px;}
+.r1>p, .l2>p, .r3>p, .l4>p{line-height: 30px; margin-bottom: 40px;}
+.r1>h4, .l2>h2, .r3>h2, .l4>h2{letter-spacing: 6px;}
+.r1>a, .l4>a{padding: 10px 30px; background-color: #b58171; color: #f3e6df; text-decoration: none;}
+.follow{text-align: center; background-color: #b58171; color: #f3e6df; padding: 25px 100px;}
+.follow>h4{margin-bottom: 10px; margin-top: 20px;}
+.follow>p{margin-bottom: 30px;}
+.photos, .products{display: flex; flex-wrap: wrap;}
+.photos>img{width: 330px; height: 330px; margin:0 10px 20px 10px;}
+.products{justify-content: space-around;}
+.collection{display: flex; margin-bottom: 20px;}
+.collection>img{margin-right: 20px;}
+.item>p{line-height: 25px;}
+.item>h5{margin-bottom: 10px; letter-spacing: 3px; font-weight: bold;}
+input, textarea {border: none; height: 45px; width: 80%; margin-bottom: 20px; padding: 4px 20px;}
+textarea{height: 100px !important;}
